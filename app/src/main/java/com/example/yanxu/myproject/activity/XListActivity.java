@@ -1,4 +1,4 @@
-package com.example.yanxu.myproject;
+package com.example.yanxu.myproject.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.yanxu.myproject.Base.BaseActivity;
+import com.example.yanxu.myproject.R;
 import com.example.yanxu.myproject.view.MyGridView;
 import com.example.yanxu.myproject.view.XListView;
 
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 
 /**
- * 部门人员列表-主页面
+ * xlistview列表
  *
  * @author yanxu
  */

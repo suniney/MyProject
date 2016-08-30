@@ -1,4 +1,4 @@
-package com.example.yanxu.myproject;
+package com.example.yanxu.myproject.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +10,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.yanxu.myproject.Base.BaseActivity;
+import com.example.yanxu.myproject.R;
 import com.example.yanxu.myproject.view.MyGridView;
 
 import java.util.ArrayList;
 
 
 /**
- * 部门人员列表-主页面
+ * 仿微信添加减少人员
  *
  * @author yanxu
  */
@@ -81,7 +82,7 @@ public class MoreListActivity extends BaseActivity {
                 holder = (ViewHolder) convertView.getTag();
             }
             if (position == data.size() + 1) {
-                holder.user_pic.setBackground(getResources().getDrawable(R.mipmap.addgroupfriend));
+                holder.user_pic.setBackground(getResources().getDrawable(R.drawable.addgroupfriend));
                 holder.user_pic.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -90,7 +91,7 @@ public class MoreListActivity extends BaseActivity {
                 });
                 return convertView;
             } else if (position == data.size()) {
-                holder.user_pic.setBackground(getResources().getDrawable(R.mipmap.delete));
+                holder.user_pic.setBackground(getResources().getDrawable(R.drawable.delete));
                 holder.user_pic.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

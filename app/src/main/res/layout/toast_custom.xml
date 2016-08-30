@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/shape_gray_light"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/duigou"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_toast"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_toast"
+        android:textSize="16sp"
+        android:padding="5dp"/>
+</LinearLayout>

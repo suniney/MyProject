@@ -18,8 +18,15 @@
         <activity android:name=".Base.GuideActivity" />
         <activity android:name=".Calendar.CalendarActivity" />
         <activity android:name=".wheel.AddAddressActivity" />
-        <activity android:name=".MoreListActivity" />
-        <activity android:name=".XListActivity" />
+        <activity android:name=".activity.MoreListActivity" />
+        <activity android:name=".activity.XListActivity" />
+        <activity android:name=".activity.IOSButtonActivity" />
+        <activity android:name=".activity.ToastActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.ViewPagerActivity1" />
+        <activity android:name=".activity.NameListActivity" />
     </application>
 
 </manifest>
