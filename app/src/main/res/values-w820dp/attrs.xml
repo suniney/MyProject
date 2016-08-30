@@ -1,0 +1,19 @@
+<resources>
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean" />
+        <attr name="state_current_month" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_range_first" format="boolean" />
+        <attr name="state_range_middle" format="boolean" />
+        <attr name="state_range_last" format="boolean" />
+        <attr name="state_mark" format="boolean" />
+        <attr name="state_mark_text" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TimePicker">
+        <attr name="type">
+            <flag name="time" value="1" />
+            <flag name="data" value="2" />
+            <flag name="time_and_data" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
