@@ -55,4 +55,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="联系人列表" />
+    <Button
+        android:id="@+id/btn_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调取相机" />
 </LinearLayout>

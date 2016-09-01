@@ -56,9 +56,10 @@ public class IOSButtonActivity extends BaseActivity {
             }
         });
         pb.setMax(100);
-        pb.setProgress(50);
-        pb.setSecondaryProgress(10);
-        pb.setText("实际");
+        pb.setProgress(5);
+        pb.setSecondaryProgress(20);
+        pb.setProgressDrawable(getResources().getDrawable(R.drawable.progressbar_color));
+//        pb.setText("实际");
     }
 }
 

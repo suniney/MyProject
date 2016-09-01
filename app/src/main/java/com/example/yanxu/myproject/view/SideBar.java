@@ -22,7 +22,7 @@ public class SideBar extends View {
     private OnTouchingLetterChangedListener onTouchingLetterChangedListener;
     // 26个字母
     public static String[] A_Z = { "A", "B", "C", "D", "E", "F", "G", "H", "I",
-            "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
+            "J", "K", "L", "M", "N", "O", "PhotoActivity", "Q", "R", "S", "T", "U", "V",
             "W", "X", "Y", "Z", "#" };
     private int choose = -1;// 选中
     private Paint paint = new Paint();

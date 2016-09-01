@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_gray_normal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_luyin_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/luyin_finish"
+        android:text="完成"
+        android:textColor="@color/red"
+        android:textSize="16sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/iv_luyin_sign"
+        style="@style/wrap"
+        android:layout_below="@id/tv_luyin_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/luyin_sign" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/rl_luyin_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_luyin_sign"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_yuyin_time"
+            style="@style/wrap"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:text="00:00:00"
+            android:textColor="@color/black"
+            android:textSize="16sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_yuyin_play"
+            style="@style/wrap"
+            android:layout_toRightOf="@id/tv_yuyin_time"
+            android:layout_centerVertical="true"
+            android:background="@drawable/luyin_play" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/rl_luyin_time"
+        android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            style="@style/wrap"
+            android:layout_height="30dp"
+            android:id="@+id/ll_luyin_operate"
+            android:background="@drawable/bt_gray_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp" >
+			<ImageView
+			    android:id="@+id/iv_luyin_point"
+			    style="@style/wrap"
+			    android:background="@drawable/luyin_start_point">
+			</ImageView>
+            <TextView
+                android:id="@+id/tv_luyin_state"
+                style="@style/wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:text="开始录音"
+                android:textColor="@color/bg_gray"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_luyin_restart"
+            style="@style/wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ll_luyin_operate"
+            android:drawableLeft="@drawable/luyin_restart"
+            android:drawablePadding="5dp"
+            android:text="重录"
+            android:textColor="@color/bg_gray"
+            android:textSize="16sp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

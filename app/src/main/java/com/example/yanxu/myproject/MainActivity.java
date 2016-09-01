@@ -11,6 +11,7 @@ import com.example.yanxu.myproject.activity.IOSButtonActivity;
 import com.example.yanxu.myproject.activity.MoreListActivity;
 import com.example.yanxu.myproject.activity.NameListActivity;
 import com.example.yanxu.myproject.activity.NotificationActivity;
+import com.example.yanxu.myproject.activity.PhotoActivity;
 import com.example.yanxu.myproject.activity.ToastActivity;
 import com.example.yanxu.myproject.activity.ViewPagerActivity;
 import com.example.yanxu.myproject.activity.ViewPagerActivity1;
@@ -19,7 +20,7 @@ import com.example.yanxu.myproject.utils.ToastUtils;
 import com.example.yanxu.myproject.wheel.AddAddressActivity;
 
 public class MainActivity extends BaseActivity {
-    private Button btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9,btn_10;
+    private Button btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9,btn_10,btn_11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,8 @@ public class MainActivity extends BaseActivity {
         btn_9.setOnClickListener(this);
         btn_10 = (Button) findViewById(R.id.btn_10);
         btn_10.setOnClickListener(this);
+        btn_11 = (Button) findViewById(R.id.btn_11);
+        btn_11.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +100,10 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_10:
                 Intent intent10= new Intent(MainActivity.this, NameListActivity.class);
                 startActivity(intent10);
+                break;
+            case R.id.btn_11:
+                Intent intent11= new Intent(MainActivity.this, PhotoActivity.class);
+                startActivity(intent11);
                 break;
             default:
                 break;
