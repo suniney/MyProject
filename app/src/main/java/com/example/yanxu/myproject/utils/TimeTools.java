@@ -54,7 +54,6 @@ public class TimeTools {
 	/**
 	 * 斜杠的时间
 	 * @param time
-	 * @param type
 	 * @return
 	 */
 	public static String parseTimeSlash(String time) {
@@ -91,7 +90,7 @@ public class TimeTools {
 		return newTime;
 	}
 	/**
-	 * 00:00
+	 * 00:00：00
 	 * @param time
 	 * @return
 	 */

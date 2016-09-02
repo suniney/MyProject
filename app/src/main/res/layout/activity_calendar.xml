@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
  >
 
-    <com.example.yanxu.myproject.Calendar.CalendarView
+    <com.example.yanxu.myproject.Calendar.view.CalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

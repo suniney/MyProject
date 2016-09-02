@@ -1,6 +1,6 @@
 package com.example.yanxu.myproject.utils;
 
-import com.example.yanxu.myproject.bean.PersonBean;
+import com.example.yanxu.myproject.linkmanList.bean.PersonBean;
 
 import java.util.Comparator;
 

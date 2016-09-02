@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.yanxu.myproject.Base.BaseActivity;
 import com.example.yanxu.myproject.R;
-import com.example.yanxu.myproject.wheel.time.TimePickerView;
+import com.example.yanxu.myproject.wheel.time.view.TimePickerView;
 import com.example.yanxu.myproject.utils.TimeTools;
-import com.example.yanxu.myproject.wheel.wheel.ArrayWheelAdapter;
-import com.example.yanxu.myproject.wheel.wheel.OnWheelChangedListener;
-import com.example.yanxu.myproject.wheel.wheel.WheelView;
+import com.example.yanxu.myproject.wheel.wheel.adpter.ArrayWheelAdapter;
+import com.example.yanxu.myproject.wheel.wheel.listener.OnWheelChangedListener;
+import com.example.yanxu.myproject.wheel.wheel.view.AddressActivity;
+import com.example.yanxu.myproject.wheel.wheel.view.WheelView;
 
 public class AddAddressActivity extends AddressActivity implements OnWheelChangedListener {
     WheelView mViewProvince;

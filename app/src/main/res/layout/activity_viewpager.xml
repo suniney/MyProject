@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#FFffff"
     android:orientation="vertical"
-    tools:context=".activity.ViewPagerActivity" >
+    tools:context=".guide.ViewPagerActivity" >
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"

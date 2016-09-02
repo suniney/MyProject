@@ -23,7 +23,7 @@
         android:textSize="30.0dip"
         android:visibility="invisible" />
 
-    <com.example.yanxu.myproject.view.SideBar
+    <com.example.yanxu.myproject.linkmanList.view.SideBar
         android:id="@+id/sidebar"
         android:layout_width="20dip"
         android:layout_height="wrap_content"

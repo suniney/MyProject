@@ -63,21 +63,21 @@
             android:background="@color/white"
             android:orientation="horizontal">
 
-            <com.example.yanxu.myproject.wheel.wheel.WheelView
+            <com.example.yanxu.myproject.wheel.wheel.view.WheelView
                 android:id="@+id/mViewProvince"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
 
-            <com.example.yanxu.myproject.wheel.wheel.WheelView
+            <com.example.yanxu.myproject.wheel.wheel.view.WheelView
                 android:id="@+id/mViewCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
 
-            <com.example.yanxu.myproject.wheel.wheel.WheelView
+            <com.example.yanxu.myproject.wheel.wheel.view.WheelView
                 android:id="@+id/mViewDistrict"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
 
     </LinearLayout>
 
-    <com.example.yanxu.myproject.wheel.time.TimePickerView
+    <com.example.yanxu.myproject.wheel.time.view.TimePickerView
         android:id="@+id/tpv_start_work"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     android:visibility="visible" >
 
-    <com.example.yanxu.myproject.wheel.time.JournalPickerView
+    <com.example.yanxu.myproject.wheel.time.view.JournalPickerView
         android:id="@+id/jp_year"
         android:layout_width="100dp"
         android:layout_height="160dp" 
@@ -24,7 +24,7 @@
         android:visibility="visible"
         android:id="@+id/tv_year" />
 
-    <com.example.yanxu.myproject.wheel.time.JournalPickerView
+    <com.example.yanxu.myproject.wheel.time.view.JournalPickerView
         android:id="@+id/jp_month"
         android:layout_width="60dp"
         android:layout_height="160dp"
@@ -40,7 +40,7 @@
         android:visibility="visible"
         android:id="@+id/tv_month" />
 
-    <com.example.yanxu.myproject.wheel.time.JournalPickerView
+    <com.example.yanxu.myproject.wheel.time.view.JournalPickerView
         android:id="@+id/jp_day"
         android:layout_width="60dp"
         android:layout_height="160dp" 
@@ -57,7 +57,7 @@
         android:id="@+id/tv_day"
         android:layout_marginRight="20dp"/>
 
-    <com.example.yanxu.myproject.wheel.time.JournalPickerView
+    <com.example.yanxu.myproject.wheel.time.view.JournalPickerView
         android:id="@+id/jp_hour"
         android:layout_width="60dp"
         android:layout_height="160dp"
@@ -72,7 +72,7 @@
         android:textSize="14sp" 
         android:id="@+id/tv_time"/>
 
-    <com.example.yanxu.myproject.wheel.time.JournalPickerView
+    <com.example.yanxu.myproject.wheel.time.view.JournalPickerView
         android:id="@+id/jp_minute"
         android:layout_width="60dp"
         android:layout_height="160dp"

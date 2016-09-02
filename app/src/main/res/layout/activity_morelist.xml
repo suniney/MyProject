@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.yanxu.myproject.view.MyGridView
+    <com.example.yanxu.myproject.Base.view.MyGridView
         android:id="@+id/gview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

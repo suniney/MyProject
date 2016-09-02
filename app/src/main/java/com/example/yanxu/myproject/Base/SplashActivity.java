@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 
 import com.example.yanxu.myproject.MainActivity;
 import com.example.yanxu.myproject.R;
+import com.example.yanxu.myproject.guide.GuideActivity;
 import com.example.yanxu.myproject.utils.SharedPreferencesUtil;
 
 

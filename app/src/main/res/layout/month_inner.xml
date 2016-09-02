@@ -37,12 +37,12 @@
              android:src="@drawable/next_month" />
      </RelativeLayout> -->
 
-     <com.example.yanxu.myproject.Calendar.CalendarGridView
+     <com.example.yanxu.myproject.Calendar.view.CalendarGridView
         android:id="@+id/calendar_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.example.yanxu.myproject.Calendar.CalendarRowView
+        <com.example.yanxu.myproject.Calendar.view.CalendarRowView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/calendar_day_headers_paddingbottom">
@@ -81,7 +81,7 @@
                 style="@style/CalendarCell.DayHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-        </com.example.yanxu.myproject.Calendar.CalendarRowView>
+        </com.example.yanxu.myproject.Calendar.view.CalendarRowView>
 
         <include layout="@layout/week" />
 
@@ -94,5 +94,5 @@
         <include layout="@layout/week" />
 
         <include layout="@layout/week" />
-    </com.example.yanxu.myproject.Calendar.CalendarGridView>
+    </com.example.yanxu.myproject.Calendar.view.CalendarGridView>
 </LinearLayout>

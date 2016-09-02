@@ -2,14 +2,12 @@ package com.example.yanxu.myproject.Calendar;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import com.example.yanxu.myproject.Base.BaseActivity;
+import com.example.yanxu.myproject.Calendar.view.CalendarView;
 import com.example.yanxu.myproject.R;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;

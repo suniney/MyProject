@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yanxu.myproject">
+
+
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 往SDCard写入数据权限 -->
@@ -22,22 +27,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Base.GuideActivity" />
+        <activity android:name=".guide.GuideActivity" />
         <activity android:name=".Calendar.CalendarActivity" />
         <activity android:name=".wheel.AddAddressActivity" />
-        <activity android:name=".activity.MoreListActivity" />
-        <activity android:name=".activity.XListActivity" />
-        <activity android:name=".activity.IOSButtonActivity" />
+        <activity android:name=".list.MoreListActivity" />
+        <activity android:name=".list.XListActivity" />
+        <activity android:name=".Button.IOSButtonActivity" />
         <activity
-            android:name=".activity.ToastActivity"
+            android:name=".toast_notifiction.ToastActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".activity.PhotoActivity"
+            android:name=".photo_voice.PhotoActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.NotificationActivity" />
-        <activity android:name=".activity.ViewPagerActivity" />
-        <activity android:name=".activity.ViewPagerActivity1" />
-        <activity android:name=".activity.NameListActivity" />
+        <activity android:name=".toast_notifiction.NotificationActivity" />
+        <activity android:name=".guide.ViewPagerActivity" />
+        <activity android:name=".guide.ViewPagerActivity1" />
+        <activity android:name=".linkmanList.NameListActivity" />
 
     </application>
 

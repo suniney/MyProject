@@ -4,6 +4,11 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.PixelFormat;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.text.ClipboardManager;
 import android.util.Base64;
 import android.view.View;
 import android.view.Window;
@@ -13,11 +18,138 @@ import android.widget.TextView;
 import com.example.yanxu.myproject.R;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.HashMap;
 
 /**
  * Created by yanxu on 2016/8/30.
  */
 public class CommonUtils {
+
+    /**
+     * 实现文本复制功能
+     * add by wangqianzhou
+     *
+     * @param content
+     */
+    public static void copy(String content, Context context) {
+        // 得到剪贴板管理器
+        ClipboardManager cmb = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        cmb.setText(content.trim());
+    }
+
+    /**
+     * 实现粘贴功能
+     * add by wangqianzhou
+     *
+     * @param context
+     * @return
+     */
+    public static String paste(Context context) {
+        // 得到剪贴板管理器
+        ClipboardManager cmb = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        return cmb.getText().toString().trim();
+    }
+
+    /**
+     * 防止重复点击
+     *
+     * @return
+     */
+    private static long lastClickTime;
+
+    public static boolean isFastDoubleClick() {
+        long time = System.currentTimeMillis();
+        long timeD = time - lastClickTime;
+        if (0 < timeD && timeD < 500) {
+            return true;
+        }
+        lastClickTime = time;
+        return false;
+    }
+
+    /**
+     * <p>
+     * 将文件转成base64 字符串
+     * </p>
+     *
+     * @param path 文件路径
+     * @return
+     * @throws Exception
+     */
+    public static String encodeBase64File(String path) throws Exception {
+        File file = new File(path);
+        FileInputStream inputFile = new FileInputStream(file);
+        byte[] buffer = new byte[(int) file.length()];
+        inputFile.read(buffer);
+        inputFile.close();
+        file.delete();
+        return Base64.encodeToString(buffer, Base64.DEFAULT);
+    }
+    /**
+     * Drawable转化为Bitmap
+     */
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        int width = drawable.getIntrinsicWidth();
+        int height = drawable.getIntrinsicHeight();
+        Bitmap bitmap = Bitmap.createBitmap(width, height, drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565);
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, width, height);
+        drawable.draw(canvas);
+        return bitmap;
+
+    }
+
+    public static Bitmap Bytes2Bimap(byte[] b) {
+        if (b.length != 0) {
+            return BitmapFactory.decodeByteArray(b, 0, b.length);
+        } else {
+            return null;
+        }
+    }
+
+    public static byte[] Bitmap2Bytes(Bitmap bm) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bm.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        return baos.toByteArray();
+    }
+
+    /**
+     * Bitmap to Drawable
+     *
+     * @param bitmap
+     * @param mcontext
+     * @return
+     */
+    public static Drawable bitmapToDrawble(Bitmap bitmap, Context mcontext) {
+        Drawable drawable = new BitmapDrawable(mcontext.getResources(), bitmap);
+        return drawable;
+    }
+
+    /**
+     * url 尾坠拼接
+     * @param
+     * @return
+     */
+    public static String getURLStringParams(String url,
+                                            HashMap<String, String> params) {
+
+        StringBuilder sb = new StringBuilder(url);
+        sb.append("?");
+        for (String key : params.keySet()) {
+            sb.append(key);
+            sb.append("=");
+            sb.append(params.get(key));
+            sb.append("&");
+        }
+        if ('&' == sb.charAt(sb.length() - 1)) {
+            sb.deleteCharAt(sb.length() - 1);
+        }
+
+        return sb.toString();
+
+    }
     //秒转成时分秒
     public static String secondToHMS(int second){
         int h = 0;

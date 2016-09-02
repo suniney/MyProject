@@ -3,9 +3,9 @@ package com.example.yanxu.myproject.utils;
 
 
 
-import com.example.yanxu.myproject.wheel.wheelModel.CityModel;
-import com.example.yanxu.myproject.wheel.wheelModel.DistrictModel;
-import com.example.yanxu.myproject.wheel.wheelModel.ProvinceModel;
+import com.example.yanxu.myproject.wheel.wheel.model.CityModel;
+import com.example.yanxu.myproject.wheel.wheel.model.DistrictModel;
+import com.example.yanxu.myproject.wheel.wheel.model.ProvinceModel;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
